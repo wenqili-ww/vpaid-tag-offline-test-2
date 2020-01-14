@@ -1,0 +1,116 @@
+<VAST version="3.0">
+    <Ad id="Interactive Preroll">
+        <InLine>
+            <AdSystem>3.0</AdSystem>
+            <AdTitle>WIREWAX VPAID VAST XML</AdTitle>
+            <Impression>
+                <![CDATA[
+                https://track.wirewax.com/v1-1/?e=IMPRESSION&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                ]]>
+            </Impression>
+            <Creatives>
+                <Creative>
+                    
+                        <Linear>
+                    
+                        <Duration>00:00:28</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=VIDEO_START&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=Q1&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=Q2&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=Q3&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=Q4&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="mute">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=MUTE&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="unmute">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=UNMUTE&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="pause">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=PAUSE&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="resume">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=RESUME&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="fullscreen">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=FULLSCREEN&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="exitFullscreen">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=EXITFULLSCREEN&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="skip">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=SKIP&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D&playtime=[CONTENTPLAYHEAD]
+                                ]]>
+                            </Tracking>
+                            <Tracking event="progress" offset="00:00:02">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=VIDEO_2SEC&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="progress" offset="00:00:05">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=VIDEO_5SEC&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="progress" offset="00:00:10">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=VIDEO_10SEC&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="progress" offset="00:00:15">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=VIDEO_15SEC&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D
+                                ]]>
+                            </Tracking>
+                            <Tracking event="close">
+                                <![CDATA[
+                                https://track.wirewax.com/v1-1/?e=CLOSE&id=ODEzNjUzOA%3D%3D&meta=b3JjYW0%3D&playtime=[CONTENTPLAYHEAD]
+                                ]]>
+                            </Tracking>
+                        </TrackingEvents>
+                        <MediaFiles>
+                            <MediaFile height="720" width="1280" type="application/javascript" apiFramework="VPAID" delivery="progressive">
+                                <![CDATA[
+                                https://edge-assets.wirewax.com/creativeData/Taboola/Test/taboola-wirewax-vpaid.js?vidId=8147925&embedLoc=test&preload=true&duration=15
+                                ]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

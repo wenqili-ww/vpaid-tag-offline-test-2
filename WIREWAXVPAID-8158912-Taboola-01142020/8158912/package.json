@@ -1,0 +1,19 @@
+{
+  "name": "wirewaxOfflinePlayer",
+  "main": "packed.html",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.3.4"
+  },
+  "node-main": "app.js",
+  "window": {
+    "title": "WIREWAX",
+    "toolbar": false,
+    "frame": true,
+    "width": 800,
+    "height": 500
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

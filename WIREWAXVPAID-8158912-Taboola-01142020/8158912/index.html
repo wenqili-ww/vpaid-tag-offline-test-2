@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html style="height: 100%">
+<head>
+	<title> WIREWAX </title>
+	<link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+	<!--<link rel="stylesheet" type="text/css" href="public/offline/ww4release/VERSION_ID/stylesheets/skins/default.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="public/offline/ww4release/VERSION_ID/stylesheets/skins/default_mobile.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="public/offline/ww4release/VERSION_ID/stylesheets/skins/common.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="public/offline/customs-release/tags/style/TAG_ID.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="public/offline/customs-release/widgets/style/WIDGET_ID.css">-->
+
+	<script type="text/javascript">
+        var ALLOWED_URL_PARAMS = {
+            COLOUR: {
+                value: 'colour'
+            },
+            AUTOPLAY:  {
+                value: 'autoplay'
+            },
+            LANG: {
+                value: 'lang'
+            },
+            VOLUME:{
+                value: 'volume'
+            },
+            LOCALE:{
+                value: 'locale'
+            },
+            PLAYER:{
+                value: 'player'
+            },
+            VIDOVERRIDE:{
+                value: 'vidOverride'
+            },
+            SPRITEID:{
+                value: 'spriteId'
+            },
+            MUTED:{
+                value: 'muted'
+            },
+            TIMESTAMP:{
+                value: 'timeStamp'
+            },
+            TIMEFROM:{
+                value: 'timeFrom'
+            },
+            CLEARLOADERS:{
+                value: 'clearLoaders'
+            },
+            LACKPOSTER:{
+                value: 'lackPoster'
+            },
+            INAPP:{
+                value: 'inApp'
+            },
+            EMBEDLOC:{
+                value: 'embedLoc'
+            },
+            WRITER:{
+                value: 'writer'
+            },
+            SKIN:{
+                value: 'skin'
+            },
+            SUBTITLES:{
+                value: 'subtitles'
+            },
+            PASSWORD:{
+                value: 'password'
+            },
+            WHITELABEL:{
+                value: 'whitelabel'
+            },
+            LOOP:{
+                value: 'loop'
+            },
+            INNOVID:{
+                value: 'innovid'
+            },
+            FORCESCRUBBER:{
+                value: 'forceScrubber'
+            },
+            NOSHARE:{
+                value: 'noShare'
+            },
+            FULLBLEED:{
+                value: 'fullBleed'
+            },
+            ALLOW360PORTRAIT:{
+                value: 'allow360Portrait'
+            },
+            DISABLEMOBILEFULLSCREEN:{
+                value: 'disableMobileFullScreen'
+            },
+            DEVCUSTOMS:{
+                value: 'devCustoms'
+            },
+            VR:{
+                value: 'vr'
+            },
+            ACCESSTOKEN:{
+                value: 'accessToken'
+            },
+            PRELOAD:{
+                value: 'preload'
+            }
+        };
+
+        window.wirewax = {
+                offline: true,
+                baseUrl: 'public/offline/ww4release/',
+                vidCdnUrl: 'public/offline/80E87A/wirewax-videos/',
+                cdnUrl: 'public/offline/',
+                fontUrl: 'public/offline/',
+                tagUrl: 'public/offline/customs-release/tags/',
+                widgetUrl: 'public/offline/customs-release/widgets/',
+                moduleUrl: 'public/offline/customs-release/modules/',
+                vidDataUrl: 'public/offline/',
+            vidId: "8158912"
+        };
+
+
+		if (window.wirewax.devCustoms){
+            window.wirewax.baseUrl = 'public/offline/ww4dev/';
+            window.wirewax.tagUrl = 'public/offline/customs-dev/tags/';
+			window.wirewax.widgetUrl = 'public/offline/customs-dev/widgets/';
+			window.wirewax.moduleUrl = 'public/offline/customs-dev/modules/';
+        };
+
+        var getUrlParameter = function(name) {
+            var component = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+            return component
+        };
+
+        Object.keys(ALLOWED_URL_PARAMS).forEach(function (value) {
+            var item = ALLOWED_URL_PARAMS[value];
+            if(getUrlParameter(item.value)) window.wirewax[item.value] = getUrlParameter(item.value);
+        });
+
+	</script>
+
+</head>
+<body id="test-tester" style="height: 100%; width:100%; margin: 0;">
+<div id="video-container" style="width: 100%; height: 100%;"></div>
+
+<script type="text/javascript">
+
+	var wirewaxUrl;
+	window.wirewax.devCustoms ? wirewaxUrl = 'public/offline/ww4dev/javascripts/wirewax.js' : wirewaxUrl = 'public/offline/ww4release/javascripts/wirewax.js';
+
+    var script = document.createElement( 'script' );
+    script.type = 'text/javascript';
+    script.src = wirewaxUrl;
+    document.body.appendChild( script );
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
