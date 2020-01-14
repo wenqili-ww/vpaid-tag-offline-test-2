@@ -5924,7 +5924,7 @@ wwplayer.define('apiService',["jquery", "pubsub", "globals", "LogEvent", "unders
             var file = args.file;
             var external = args['external'];
             globals.LOG("getting subtitles", file);
-            var url = external ? file : '/public/offline' + file;
+            var url = external ? file : './public/offline' + file;
 
             _ajaxWithRetry(url, 'GET', {}, self.retryLimit, function (data) {
                 var subtitles = [];
